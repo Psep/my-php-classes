@@ -3,6 +3,8 @@
 	/*
 	 * Copyright (C) 2013 - Pablo Sepúlveda @psep
      	 *
+	 * ArrayList v1.5a
+	 *
      	 * This file is part of gEvents.
      	 * gEvents is free software: you can redistribute it and/or modify
      	 * it under the terms of the GNU General Public License as published by
