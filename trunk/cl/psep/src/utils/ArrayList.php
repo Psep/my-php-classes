@@ -20,21 +20,21 @@
      	 * along with gEvents.  If not, see <http://www.gnu.org/licenses/>.
      	 *
      	 */
-	final class ArrayList {
+	class ArrayList {
  
 		private $array = array();
 		
 		/*
 		 * @return valor del ArrayList
 		 */
-		final public function getArrayList(){
+		public function getArrayList(){
 			return $this->array;
 		}
 		
 		/*
 		 * Limpia el array()
 		 */
-		final public function clear(){
+		public function clear(){
 			$this->array = array();
 		}
  
@@ -43,14 +43,14 @@
 		 * 
 		 * Agrega un nuevo item al array
 		 */
-    		final public function add($item){
+    		public function add($item){
       			$this->array[] = $item ;
     		}
  
  		/*
 		 * @return array como una cadena de string
 		 */
-    		final public function toString(){
+    		public function toString(){
     			$cadena = "";
       			foreach ($this->array as $item) {
         			$cadena .= $item;
@@ -63,7 +63,7 @@
 		 * 
 		 * Remueve un item determinado del array
 		 */
-    		final public function remove($item){
+    		public function remove($item){
     			unset($this->array[$item]);
     		}
 
@@ -72,14 +72,14 @@
 		 * 
 		 * Retorna un item determinado
 		 */
-    		final public function get($item){
+    		public function get($item){
 			return $this->array[$item];
     		}
 		
  		/*
 		 * @return tamaño del array
 		 */
- 		final public function size(){
+ 		public function size(){
     			$size = 0;
       			foreach ($this->array as $item) {
         			$size++;
