@@ -20,7 +20,7 @@
 	 * along with gEvents.  If not, see <http://www.gnu.org/licenses/>.
 	 *
 	 */
-	final class IteratorPattern{
+	class IteratorPattern{
 	
 		private $position;
 		private $sizeList;
@@ -35,7 +35,7 @@
 		/*
 		 * @return tamaño de la lista
 		 */
-		final private function size(){
+		private function size(){
 			$size = 0;
 
 			foreach ($this->array as $item) {
@@ -51,7 +51,7 @@
 		 * Retorna true cuando el puntero (position) 
 		 * está dentro de la lista.
 		 */
-		final public function hasNext(){
+		public function hasNext(){
 			$result = false;
 			
 			if($this->position == 0 && $this->sizeList > 0){
@@ -66,7 +66,7 @@
 		/*
 		 * @return item de la lista según posición
 		 */
-		final public function next(){
+		public function next(){
 			$item = NULL;
 			
 			if($this->position < $this->sizeList){
