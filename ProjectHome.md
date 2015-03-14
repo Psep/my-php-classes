@@ -1,0 +1,1 @@
+Conjunto de clases PHP imitando a las de Java.
